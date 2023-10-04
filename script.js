@@ -73,30 +73,4 @@ $(document).ready(function () {
         alert("Form submitted successfully!");
     });
 
-    // Additional jQuery operations
-    $("#changeButtonText").click(function () {
-        // Change button text
-        $("input[type='submit']").val("New Text");
-    });
-
-    $("#colorChangeDiv").click(function () {
-        // Change CSS properties like color
-        $(this).css("color", "red");
-    });
-
-    $("#changeImage").click(function () {
-        // Change image source
-        $("img").attr("src", "new-image.jpg");
-    });
-
-    $("#textNodeDiv").click(function () {
-        // Add a text node
-        var textNode = document.createTextNode("Additional text.");
-        $(this).append(textNode);
-    });
-
-    $("#deleteNode").click(function () {
-        // Delete a node
-        $(this).prev().remove();
-    });
 });
